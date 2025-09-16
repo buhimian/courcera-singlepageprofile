@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <header class="header">
+        <div class="profile-info">
+            <div>
+                <h2>Sreeram K S</h2>
+                <p class="email">sreeramks1996@gmail.com</p>
+                <p class="phone">+91 6238763890</p>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#recommendations">Recommendations</a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="avatar-section">
+            <img src="image.jpg" alt="Profile avatar" width="180" height="180" style="border-radius: 50%; background: #fff; object-fit: cover;" />
+        </div>
+        <div class="intro-section">
+            <h1>Hi, I'm Sreeram K S! <span class="wave">👋</span></h1>
+            <p class="description">I am a seasoned Software Engineer with 6+ years of experience in both IT product and services industries, specializing in Java backend development and microservices architecture. My expertise includes Spring Boot, Spring Batch, JPA, JDBC, and Oracle Database, along with front-end technologies like Angular, HTML5, CSS, JavaScript, and Bootstrap.
+
+            Currently at Tech Mahindra, I focus on migrating legacy systems to scalable microservices architectures, improving performance and system reliability. Throughout my career, I have led and mentored teams, managing complex projects from conception to deployment, while leveraging Agile methodologies for efficient execution.
+
+            I hold an Oracle Certified Java SE 11 Developer certification and have completed advanced Spring and Java training on Udemy. Expanding my expertise, I am now diving into AI and cloud computing to transition into the AI/ML domain.
+
+            Beyond work, I am passionate about traveling, adventure sports (bungee jumping), trekking, drawing, and writing. I enjoy exploring new cultures and pushing creative boundaries.
+
+            I am eager to connect with professionals in software engineering, cloud computing, and AI to collaborate on innovative solutions and industry advancements. Let’s connect! 🚀</p>
+        </div>
+    </main>
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="html.png" alt="HTML" class="skill-icon" />
+                <div>HTML</div>
+                <div>2 years experience</div>
+            </div>
+            <div class="skill-card">
+                <img src="js.jpg" alt="JavaScript" class="skill-icon" />
+                <div>JavaScript</div>
+                <div>1.5 years experience</div>
+            </div>
+            <div class="skill-card">
+                <img src="java.png" alt="Java" class="skill-icon" />
+                <div>Java</div>
+                <div>.5 years experience</div>
+            </div>
+            <div class="skill-card">
+                <img src="react.png" alt="React" class="skill-icon" />
+                <div>React</div>
+                <div>1 year experience</div>
+            </div>
+            <div class="skill-card">
+                <img src="node.jpg" alt="Node.js" class="skill-icon" />
+                <div>Node.js</div>
+                <div>1 years experience</div>
+            </div>
+            <div class="skill-card">
+                <img src="css.png" alt="CSS" class="skill-icon" />
+                <div>CSS</div>
+                <div>2 years experience</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>ITR Remediation</h3>
+                <ul>
+                    <li>Led the migration of corporate banking microservices from OHEC Red Hat to OHE3 Red Hat, reducing infrastructure costs by 25% and improving system reliability.</li>
+                    <li>Containerized microservices using Docker and automated deployments via Jenkins, cutting deployment time by 40% and minimizing downtime.</li>
+                    <li>Optimized resource usage and cost efficiency by replicating platform setups and upgrading software versions (Java 8 → 17, Angular), reducing legacy system maintenance by 35%.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-item">
+                <h3>Prospectus Policy and Fund Update</h3>
+                <ul>
+                    <li>Led the development of Spring Batch and Boot applications, automating data file generation for policy and fund prospectus updates, reducing manual effort by 50%. Orchestrated Autosys job scheduling, improving update accuracy to 99.9%. Developed enterprise utility libraries, standardizing Java best practices and mentoring junior developers.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-item">
+                <h3>Business Remediation</h3>
+                <ul>
+                    <li>Developed an HTML5-based UI and Spring Boot middleware for a credit card loyalty points remediation system, reducing processing time by 40%. Managed deployment on cloud services and optimized REST APIs for seamless data transfer to a Hadoop-based backend, improving data retrieval speed by 30%.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="recommendations" class="recommendations-section">
+        <h2 class="section-title">Recommendations</h2>
+        <div class="recommendations-row">
+            <div class="recommendation-box">
+                 "Sreeram K S is a very quick learner and quickly grasps key concepts of Web development. He got a great attitude & he is an excellent team player. He has a curious mind and asks the right question. He takes initiative within a team and has potential to lead the team."
+            </div>
+            <div class="recommendation-box">
+                 "Working with Sreeram K S has been an awesome experience. He is highly knowledgeable and always goes the extra step to make sure everything is right. For any future projects that need his expertise I would definitely want to work with him again."
+            </div>
+            <div class="recommendation-box">
+                 "I had worked along with Sreeram K S during the initial phase of our venture which needed web development. He is a committed resource who has in-depth knowledge about the domain. He will be an asset to any organization."
+            </div>
+        </div>
+    </section>    
+    <section class="leave-recommendation-section">
+        <form class="recommendation-form" id="recommendationForm">
+            <h2 class="section-title" style="font-size:1.5em; margin-bottom:20px;">Leave a Recommendation</h2>
+            <input type="text" name="name" placeholder="Name (Optional)" class="recommendation-input" />
+            <textarea name="message" placeholder="Message" class="recommendation-textarea"></textarea>
+            <button type="submit" class="recommendation-submit">Submit</button>
+        </form>
+        <div id="recommendationModal" class="recommendation-modal" style="display:none;">
+            <div class="recommendation-modal-content">
+                <p class="modal-message">Thanks for leaving a recommendation</p>
+                <button id="closeModalBtn" class="modal-ok">OK</button>
+            </div>
+        </div>
+    </section>
+    <button id="backToTopBtn" class="back-to-top" title="Back to Top">&#8679;</button>
+    <script src="script.js"></script>
+</body>
+</html>
